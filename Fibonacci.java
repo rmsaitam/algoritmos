@@ -21,11 +21,11 @@ public class Fibonacci
        int n = sc.nextInt();
 
        inicio1 = System.currentTimeMillis();
-       BigInteger fib = FibonacciIterativo(n);
+       BigInteger fib1 = FibonacciIterativo(n);
        fim1 = System.currentTimeMillis();
-       System.out.println("Fibonacci de " +n+ "=" +fib);
-       
        ms1 = fim1-inicio1;
+       System.out.println("Fibonacci de " +n+ "=" +fib1);
+       
        System.out.println("Tempo " +(ms1)+ "ms");
        ConverteMilisegToHoraMinutos(ms1);
 
@@ -33,6 +33,7 @@ public class Fibonacci
        BigInteger fib2 = Fibonacci2(n);
        fim2 = System.currentTimeMillis();
        ms2 = fim2-inicio2;
+       System.out.println("Fibonacci de " +n+ "=" +fib2);
        System.out.println("Tempo " +(ms2)+ "ms");
        ConverteMilisegToHoraMinutos(ms2);
               
